@@ -1,0 +1,595 @@
+/*66TDV@dEvBXNb3P1Q%2)*/
+
+@font-face {
+    font-family: 'Venus Rising Rg';
+    src: url('VenusRisingRg-Regular.woff2') format('woff2'),
+        url('VenusRisingRg-Regular.woff') format('woff'),
+        url('VenusRisingRg-Regular.ttf') format('truetype'),
+        url('VenusRisingRg-Regular.svg#VenusRisingRg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+/* Roots */
+:root {
+    --black: #000;
+    --white: #fff;
+    --grey-line: #D4D4D4;
+    --grey: #AEAEAE;
+}
+
+/* Basics */
+html,
+body {
+    font-family: 'Venus Rising Rg';
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+li {
+    list-style-type: none;
+}
+body.open {
+    overflow: hidden;
+}
+
+/**SCHRIFTEN**/
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: Venus Rising Rg;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: #fff;
+    background-color: black;
+}
+
+/**NAVIGATION**/
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+nav ul{
+    display: flex;
+}
+.main-nav ul a{
+    font-size: 24px;
+    font-weight: bolder;
+    color: #000;
+    margin-right: 80px;
+}
+
+.main-nav ul a.active {
+    color: #d4020a;
+}
+/**IMPRESSUM**/
+
+.impressum {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.impressum-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.impressum-links a{
+    color: #000;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 24px;
+
+}
+.impressum-links a:hover {
+    color: #d4020a;
+}
+
+.himpressum {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center
+}
+/*TITELSEITE*/
+.startpage h1 {
+    color: #d4020a;
+    font-size: 200px;
+    width: 100%;
+    height: 129vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    margin-top: 25px;
+}
+
+.startpage div{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/**GESCHICHTE (AUF HOME SEITE)**/
+.title-history {
+    display: flex;
+    justify-content: center;
+    font-family: Venus Rising Rg;
+    font-size: 100px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    }
+.president {
+    width: 300px;
+}
+
+.histori {
+    background: var(--black);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.history {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.p-history {
+    max-width: 30%;
+    color: white;
+}
+.silhouette img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.silhouette img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+@keyframes mover {
+    100% { transform: translateX(50px); }
+}
+/**MODELLE(AUF HOME SEITE**/
+.forhtwo h2 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+    color: var(--white);
+    background: var(--black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 35px;
+}
+
+.gtr-r-32 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gtr-r-32 img {
+    height: 450px;
+}
+.gtr-r-32 p {
+    max-width: 40%;
+}
+
+.gtr-r-34 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gtr-r-34 img {
+    height: 450px;
+}
+.gtr-r-34 p {
+    max-width: 40%;
+}
+
+.gtr-r-35 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gtr-r-35 img {
+    height: 450px;
+}
+.gtr-r-35 p {
+    max-width: 40%;
+}
+
+.button {
+    background-color: var(--black);
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: 75px;
+}
+
+
+a.button:hover {
+    color: #d4020a;
+    background-color: black;
+}
+
+/**VIDEO-SEITE**/
+.gtr-on-road {
+    color: #000;
+    background: none;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.p-video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+
+/***MODELLE-SEITE***/
+#models h1{
+    display: flex;
+    justify-content: left;
+    margin-left: 25px;
+}
+#models {
+    background-color: black;
+}
+
+#models p{
+    color: #fff;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+#models img{
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.title-model {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-left: 25px;
+}
+/*R32*/
+.threetwo {
+    display: flex;
+    justify-content: space-evenly;
+}
+.threetwo img {
+    width: 450px;
+}
+
+/*R34*/
+.threefour {
+    display: flex;
+    justify-content: space-evenly;
+}
+.threefour img {
+    width: 450px;
+}
+/*R35*/
+.threefive {
+    display: flex;
+    justify-content: space-evenly;
+}
+.threefive img {
+    width: 450px;
+}
+
+
+
+/**Respnsiv Designe*/
+.nav-burger {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hidden {
+        display: none;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav.expanded{
+        display: flex;
+    }
+
+    .burger-container {
+        z-index: 99;
+    }
+
+    .nav-burger {
+        display: block;
+    }
+    
+    .expanded ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+    }
+/***SCHRIFTEN***/
+h1 {
+    font-size: 36px;
+    padding: 1px;
+}
+.section-modelle h2 {
+    font-size: 14px;
+    margin: 25px 40px 10px 40px;
+    padding: 15px;
+}
+/***NAVIGATION***/
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 25px 25px 25px;
+}
+.main-nav ul a {
+    margin-right: 0px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+}
+
+/**TITELSEITE**/
+.startpage h1 {
+    font-size: 56px;
+    padding-top: 50px;
+    height: 88vh;
+    background-image: url(../img/background.jpg);
+    background-position-x: -70px;
+    object-fit: contain;
+    background-size: 320%;
+    margin-top: 0px;
+}
+
+/**GESCHICHTE**/
+.title-history {
+    font-size: 24px;
+    margin: 5px 0px 10px 0px;
+}
+.histori {
+    padding-top: 15px;
+}
+.history {
+    display: flex;
+    flex-direction: column;
+}
+.history img {
+width: 200px;
+}
+.history p {
+    max-width: 90%;
+    font-size: 18px;
+}
+
+/***MODELLE***/
+
+.silhouette img {
+    width: 100px;
+}
+
+/*R32*/
+.gtr-r-32 {
+    display: flex;
+    flex-direction: column;
+}
+
+.gtr-r-32 img {
+    max-width: 100%;
+    height: unset;
+}
+
+.gtr-r-32 p {
+    max-width: 90%;
+}
+
+/*R34*/
+.gtr-r-34 {
+    display: flex;
+    flex-direction: column;
+}
+.gtr-r-34 img {
+    max-width: 100%;
+    height: unset;
+}
+
+.gtr-r-34 p {
+    max-width: 90%;
+}
+
+/*R35*/
+.gtr-r-35 {
+    display: flex;
+    flex-direction: column;
+}
+.gtr-r-35 img {
+    max-width: 100%;
+    height: unset;
+}
+
+.gtr-r-35 p {
+    max-width: 90%;
+}
+
+a.button {
+    font-size: 12px;
+    height: 35px;
+}
+
+
+/***VIDEO-SEITE***/
+.gtr-on-road {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gtr-on-road  h1 {
+text-align: center;
+font-size: 24px;
+padding: 15px;
+}
+
+/***MODELLE***/
+
+/*R32*/
+#models img{
+    margin: 0px;
+    width: 100%;
+}
+.threetwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.threefour {
+    display: flex;
+    flex-direction: column;
+}
+.threefive {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

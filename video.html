@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gtr's by Mischa</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="main-nav" >
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/gtr-logo.png" alt="logo"></a>
+            </div>
+    <div> 
+        <a class="nav-burger" onclick="toggleMainNav()">
+        <i class="burger-icon" data-feather="menu"></i>
+        <i class="burger-icon hidden" data-feather="x"></i>
+    </a>
+    </div>
+            <nav id="main-nav">
+    
+                <ul>
+                    <li> <a href="#Home">Home</a> </li>
+                    <li> <a class="active" href="video.html">Video</a></li>
+                    <li> <a href="Modelle.html">Modelle</a></li>
+                </ul>
+            
+            </nav>
+    
+        </div>
+       
+    
+            
+    </header>
+
+<main>
+<section>
+    <div class="gtr-on-road">
+        <div>
+        <h1>GTR r35 on road</h1>
+        </div>
+
+        <p class="p-video" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+    </div>
+
+
+<div class="video" >
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vlDOjTaaEdA?start=186" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+    <p class="p-video" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takiLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea taki</p>
+</section>
+</main>
+
+<footer>
+
+    <div class="main-nav" >
+    
+        <div>
+ 
+            <a class="logo" href="index.html"> <img src="assets/img/gtr-logo.png" alt="logo">  </a>
+ 
+        </div>
+
+        <div>
+         <a href="impressum.html" target="_blank"  class="impressum">Impressum</a>
+    </div>
+
+        <div class="social-media" >
+         <ul>
+             <li>
+             <a href="https://www.instagram.com/miscchhaa/" target="_blank"><i data-feather="instagram"></i></a>
+             <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><i data-feather="youtube"></i></a>
+             </li>
+         </ul>
+        </div>
+
+        
+ 
+     </div>
+
+
+
+</footer>
+
+    <script>
+        feather.replace()
+        
+            function toggleMainNav() {            
+                $('#main-nav').toggleClass('expanded');            
+                $('.burger-icon').toggleClass('hidden');        
+            };
+      </script>
+
+</body>
+</html>
